@@ -15,11 +15,11 @@ export class CornerShapeFactory extends AbstractShapeFactory {
     }
 
     getShape(): Shape {
-        switch(true) {
-            case this._type === "rectangle":
+        switch(this._type) {
+            case "rectangle":
                 return new Rectangle(this._color);
 
-            case this._type === "triangle":
+            case "triangle":
                 return new Triangle(this._color);
 
             default:

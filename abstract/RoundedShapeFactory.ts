@@ -14,8 +14,8 @@ export class RoundedShapeFactory extends AbstractShapeFactory {
     }
 
     getShape(): Shape {
-        switch (true) {
-            case this._type === "circle":
+        switch (this._type) {
+            case "circle":
                 return new Circle(this._color);
 
             default:
