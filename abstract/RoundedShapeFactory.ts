@@ -1,5 +1,5 @@
 import { AbstractShapeFactory } from "./AbstractShapeFactory";
-import { Shape } from "../Shape";
+import { Shape } from "../commons/Shape";
 import { CircleFactory } from "../factoryMethod/CircleFactory";
 
 export class RoundedShapeFactory extends AbstractShapeFactory {
@@ -7,9 +7,10 @@ export class RoundedShapeFactory extends AbstractShapeFactory {
 
     private readonly _type: string;
 
-    constructor(color: string) {
+    constructor(color: string, type: string) {
         super();
         this._color = color;
+        this._type = type;
     }
 
     getShape(): Shape {

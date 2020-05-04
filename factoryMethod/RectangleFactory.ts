@@ -1,9 +1,8 @@
-import {ShapeFactory} from "./ShapeFactory";
-import {Rectangle} from "../Rectangle";
+import { ShapeFactory } from "./ShapeFactory";
+import { Rectangle } from "../commons/Rectangle";
 
 export class RectangleFactory extends ShapeFactory {
     private readonly _color: string;
-
 
     constructor(color: string) {
         super();

@@ -1,8 +1,7 @@
 import { AbstractShapeFactory } from "./AbstractShapeFactory";
-import { Shape } from "../Shape";
-import {Triangle} from "../Triangle";
-import {RectangleFactory} from "../factoryMethod/RectangleFactory";
-import {TriangleFactory} from "../factoryMethod/TriangleFactory";
+import { Shape } from "../commons/Shape";
+import { RectangleFactory } from "../factoryMethod/RectangleFactory";
+import { TriangleFactory } from "../factoryMethod/TriangleFactory";
 
 export class CornerShapeFactory extends AbstractShapeFactory {
     private readonly _color: string;
