@@ -1,5 +1,5 @@
-import {ShapeFactory} from "./ShapeFactory";
-import {Circle} from "../Circle";
+import { ShapeFactory } from "./ShapeFactory";
+import { Circle } from "../commons/Circle";
 
 export class CircleFactory extends ShapeFactory {
     private readonly _color: string;

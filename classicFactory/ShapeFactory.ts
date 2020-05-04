@@ -1,7 +1,7 @@
-import { Shape } from "./Shape";
-import {Circle} from "./Circle";
-import {Rectangle} from "./Rectangle";
-import {Triangle} from "./Triangle";
+import { Shape } from "../commons/Shape";
+import { Circle } from "../commons/Circle";
+import { Rectangle } from "../commons/Rectangle";
+import { Triangle } from "../commons/Triangle";
 
 export class ShapeFactory {
     private readonly _color: string;
