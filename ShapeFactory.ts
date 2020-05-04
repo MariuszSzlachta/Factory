@@ -14,14 +14,14 @@ export class ShapeFactory {
     }
 
     getShape(): Shape {
-        switch(true) {
-            case this._type === "circle":
+        switch(this._type) {
+            case "circle":
                 return new Circle(this._color);
 
-            case this._type === "rectangle":
+            case "rectangle":
                 return new Rectangle(this._color);
 
-            case this._type === "triangle":
+            case "triangle":
                 return new Triangle(this._color);
 
             default:
