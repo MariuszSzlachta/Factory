@@ -1,7 +1,7 @@
 import {ShapeFactory} from "./ShapeFactory";
-import {Rectangle} from "../Rectangle";
+import {Triangle} from "../Triangle";
 
-export class RectangleFactory extends ShapeFactory {
+export class TriangleFactory extends ShapeFactory {
     private readonly _color: string;
 
 
@@ -11,6 +11,6 @@ export class RectangleFactory extends ShapeFactory {
     }
 
     create() {
-        return new Rectangle(this._color)
+        return new Triangle(this._color)
     }
 }
