@@ -1,7 +1,8 @@
 import { AbstractShapeFactory } from "./AbstractShapeFactory";
 import { Shape } from "../Shape";
-import {Rectangle} from "../Rectangle";
 import {Triangle} from "../Triangle";
+import {RectangleFactory} from "../factoryMethod/RectangleFactory";
+import {TriangleFactory} from "../factoryMethod/TriangleFactory";
 
 export class CornerShapeFactory extends AbstractShapeFactory {
     private readonly _color: string;
@@ -17,10 +18,10 @@ export class CornerShapeFactory extends AbstractShapeFactory {
     getShape(): Shape {
         switch(this._type) {
             case "rectangle":
-                return new Rectangle(this._color);
+                return new RectangleFactory(this._color).create();
 
             case "triangle":
-                return new Triangle(this._color);
+                return new TriangleFactory(this._color).create();
 
             default:
                 throw Error("Unrecognized type");
